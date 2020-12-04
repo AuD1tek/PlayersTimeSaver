@@ -1,13 +1,18 @@
 # PlayersTimeSaver
 ### RocketMod Unturned Plugin ### 
-> ### [Last release](https://github.com/AuD1tek/PlayersTimeSaver/releases/tag/1.2) ###
 
+
+### How to install ###
+1. Download plugin (**[Last release](https://github.com/AuD1tek/PlayersTimeSaver/releases/tag/1.2)**)
+1. Go to the directory with path: *..\Unturned\Servers\SERVER_ID\Rocket\Plugins*
+1. Drop *PlayersTimeSaver.dll* into the directory
+1. Start the server and enjoy
 
 ### Saving: ###
-- **TotalPlayingTime** - *total time the player played on the server in seconds*
-- **LastSessionPlayingTime** - *game time on the server in seconds of the last session*
-- **DateFirstConnection** - *date of first login to the server*
-- **DateLastConnection** - *date of last login to the server*
+- TotalPlayingTime        - *total time the player played on the server in seconds*
+- LastSessionPlayingTime  - *game time on the server in seconds of the last session*
+- DateFirstConnection     - *date of first login to the server*
+- DateLastConnection      - *date of last login to the server*
 
 **Path:** *..\Unturned\Servers\SERVER_ID\Players\PLAYER_ID\MAP_NAME\Player\Time.dat*
 
