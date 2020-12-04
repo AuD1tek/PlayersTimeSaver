@@ -1,8 +1,9 @@
 # PlayersTimeSaver
-### RocketMod Unturned Plugin ###
+### RocketMod Unturned Plugin ### 
+> ### [Last release](https://github.com/AuD1tek/PlayersTimeSaver/releases/tag/1.2) ###
 
 
-> Saving:
+### Saving: ###
 - **TotalPlayingTime** - *total time the player played on the server in seconds*
 - **LastSessionPlayingTime** - *game time on the server in seconds of the last session*
 - **DateFirstConnection** - *date of first login to the server*
