@@ -3,7 +3,7 @@
 
 
 ### How to install ###
-1. Download plugin (**[Last release](https://github.com/AuD1tek/PlayersTimeSaver/releases/tag/1.2)**)
+1. Download plugin (*[dll](https://github.com/AuD1tek/PlayersTimeSaver/releases/download/1.2/PlayersTimeSaver.dll)* | *[last release](https://github.com/AuD1tek/PlayersTimeSaver/releases/tag/1.2)*)
 1. Go to the directory with path: *..\Unturned\Servers\SERVER_ID\Rocket\Plugins*
 1. Drop *PlayersTimeSaver.dll* into the directory
 1. Start the server and enjoy
