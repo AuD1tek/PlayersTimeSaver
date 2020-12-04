@@ -40,6 +40,8 @@ namespace PlayersTimeSaver
             _connectedTime = Time.realtimeSinceStartup;
             _dateCurrentSessionConnection = DateTime.Now;
 
+
+
             if (PlayerSavedata.fileExists(Player.Player.channel.owner.playerID, "/Player/Time.dat"))
             {
                 Data data = PlayerSavedata.readData(Player.Player.channel.owner.playerID, "/Player/Time.dat");
@@ -47,11 +49,25 @@ namespace PlayersTimeSaver
                 _totalPlayingTime = data.readSingle("TotalPlayingTime", 0);
                 _lastSessionPlayingTime = data.readSingle("LastSessionPlayingTime", 0);
 
+
+
                 if (DateTime.TryParse(data.readString("DateFirstConnection"), out DateTime firstDate))
                     _dateFirstConnection = firstDate;
+                else
+                    _dateFirstConnection = DateTime.Now;
+
+
+
 
                 if (DateTime.TryParse(data.readString("DateLastConnection"), out DateTime lastDate))
                     _dateLastConnection = lastDate;
+                else
+                    _dateLastConnection = DateTime.Now;
+            }
+            else
+            {
+                _dateFirstConnection = DateTime.Now;
+                _dateLastConnection = DateTime.Now;
             }
         }
 
@@ -66,7 +82,7 @@ namespace PlayersTimeSaver
             data.writeSingle("TotalPlayingTime", TotalPlayingTime);
             data.writeSingle("LastSessionPlayingTime", CurrentSessionPlayingTime);
             data.writeString("DateFirstConnection", _dateFirstConnection.ToString());
-            data.writeString("DateLastConnection", _dateLastConnection.ToString());
+            data.writeString("DateLastConnection", DateTime.Now.ToString());
 
             PlayerSavedata.writeData(Player.Player.channel.owner.playerID, "/Player/Time.dat", data);
         }

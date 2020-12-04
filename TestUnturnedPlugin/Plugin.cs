@@ -19,7 +19,7 @@ namespace PlayersTimeSaver
         
         private void onPlayerDisconnected(UnturnedPlayer player)
         {
-            Rocket.Core.Logging.Logger.Log($"{player.CharacterName} Played: {player.GetCurrentSessionPlayingTimeInSeconds()} seconds", ConsoleColor.White);
+            Rocket.Core.Logging.Logger.Log($"{player.CharacterName} played: {player.GetCurrentSessionPlayingTimeInSeconds()} seconds", ConsoleColor.White);
         }
     }
 }
